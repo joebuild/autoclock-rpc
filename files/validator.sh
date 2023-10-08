@@ -22,13 +22,12 @@ exec /mnt/solana/target/release/solana-validator \
 --accounts /mnt/solana-accounts \
 --ledger /mnt/solana-ledger \
 --snapshots /mnt/solana-snapshots \
---no-snapshot-fetch \
 --limit-ledger-size 400000000 \
 --rpc-send-default-max-retries 3 \
 --rpc-send-service-max-retries 3 \
 --rpc-send-retry-ms 2000 \
 --full-rpc-api \
---accounts-index-memory-limit-mb 350 \
+--accounts-index-memory-limit-mb 250 \
 --account-index-exclude-key kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6 \
 --tpu-use-quic \
 --known-validator 7Np41oeYqPefeNQEHSv1UDhYrehxin3NStELsSKCT4K2 \

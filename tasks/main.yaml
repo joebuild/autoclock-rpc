@@ -38,9 +38,9 @@
 - name: tune host
   include_tasks: tuner.yaml
 
-- name: snapshot download
-  include_tasks: snapshot_downloader.yaml
-  when: download_snapshot|default(true)|bool == true
+# - name: snapshot download
+#   include_tasks: snapshot_downloader.yaml
+#   when: download_snapshot|default(true)|bool == true
 
 - name: restart without waiting
   become: true

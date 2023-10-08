@@ -13,7 +13,7 @@ exec /mnt/solana/target/release/solana-validator \
 --no-untrusted-rpc \
 --no-voting \
 --private-rpc \
---rpc-bind-address 0.0.0.0 \
+--rpc-bind-address 127.0.0.1 \
 --enable-cpi-and-log-storage \
 --account-index program-id \
 --enable-rpc-transaction-history \

@@ -21,3 +21,9 @@
     repo: 'https://github.com/rpcpool/yellowstone-grpc.git'
     dest: /home/solana/yellowstone-grpc
     version: 'v1.11.1+solana.1.16.19'
+
+- name: jupiter
+  ansible.builtin.get_url:
+    url: https://github.com/jup-ag/jupiter-swap-api/releases/download/{{ jupiter_version }}/jupiter-swap-api-x86_64-unknown-linux-gnu.zip
+    dest: /home/solana/jupiter.zip
+    mode: '0440'

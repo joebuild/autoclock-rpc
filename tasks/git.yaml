@@ -13,3 +13,11 @@
   args:
     chdir: /mnt/solana
     executable: /bin/bash
+
+- name: yellowstone
+  become: true
+  become_user: solana
+  git:
+    repo: 'https://github.com/rpcpool/yellowstone-grpc.git'
+    dest: /home/solana/yellowstone-grpc
+    version: 'v1.11.1+solana.1.16.19'

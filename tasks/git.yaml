@@ -2,7 +2,7 @@
   become: true
   become_user: solana
   git:
-    repo: 'https://github.com/solana-labs/solana.git'
+    repo: 'https://github.com/rpcpool/solana-public.git'
     dest: /mnt/solana
     version: tags/{{ solana_version }}
 
